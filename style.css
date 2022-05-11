@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Major Mono Display';
+    src: url('media/MajorMonoDisplay-Regular.ttf')
+}
+
+* {
+    font-family: 'Major Mono Display';
+}
+
+#mesaNight {
+    height: 100%;
+    width: 100%;
+}
+
+#alien {
+    height: 50px;
+    width: 50px;
+}
