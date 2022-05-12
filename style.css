@@ -1,18 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ****Page code begins**** */
+
 @font-face {
     font-family: 'Major Mono Display';
     src: url('media/MajorMonoDisplay-Regular.ttf')
 }
 
-* {
-    font-family: 'Major Mono Display';
+body {
+    background-color: rgb(4, 2, 12);
+    color: rgb(199, 206, 212);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#mesaNight {
-    height: 100%;
-    width: 100%;
+em {
+    font-style: italic;
 }
 
-#alien {
-    height: 50px;
-    width: 50px;
+#backgroundImg{
+    display: block;
+    min-height: 100vh;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+#logoContainer {
+    top: 20%;
+    padding: 2%;
+    padding-right: 0%;
+    width: 38%;
+    position: absolute;
+    background-color: rgba(17, 27, 39, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoImg {
+    height: 75px;
+    width: 75px;
+}
+
+#logoText {
+    font-family: 'Major Mono Display', monospace;
+    color: #4c1b27;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+body > div + div {
+    position: absolute;
+    top: 15%;
+    right: 12%;
+    width: 45%;
+    font-size: 22px;
+    line-height: 150%;
+}
+
+body > div + div > p + p {
+    margin-top: 8%;
+}
+
+#signUpSheet {
+    top: 50%;
+    position: absolute;
+    right: 12%;
+}
+
+body > form > caption {
+    margin: 20px;
 }
