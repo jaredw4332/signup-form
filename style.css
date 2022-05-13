@@ -55,9 +55,10 @@ table {
 }
 
 body {
-    background-color: rgb(4, 2, 12);
+    background-color: #8b3349;
     color: rgb(199, 206, 212);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 em {
@@ -85,36 +86,48 @@ em {
 }
 
 #logoImg {
-    height: 75px;
-    width: 75px;
+    height: clamp(8vh, 10vh, 75px);
+    width: clamp(5vw, 8vw, 75px);
 }
 
 #logoText {
     font-family: 'Major Mono Display', monospace;
     color: #4c1b27;
-    font-size: 55px;
+    font-size: clamp(10px, 6vw, 55px);
     font-weight: 600;
 }
 
 body > div + div {
-    position: absolute;
-    top: 15%;
-    right: 12%;
-    width: 45%;
-    font-size: 22px;
-    line-height: 150%;
+    display: flex;
+    flex-direction: column;
 }
 
-body > div + div > p + p {
-    margin-top: 8%;
+#greetingText {
+    padding: 2vh;
+    padding-left: 2.5vh;
+    font-size: clamp(16px, 6vw, 22px);
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+    line-height: 3.5vh;
+    max-width: 40vw;
+}
+
+body > div + div > div > p + p {
+    margin-top: 6vh;
+}
+
+input, label {
+    display: block;
+    width: 15vw;
+    margin-bottom: 0.5%;
 }
 
 #signUpSheet {
-    top: 50%;
-    position: absolute;
-    right: 12%;
+    background-color: #4c1b27;
+    padding: 5%;
 }
 
-body > form > caption {
-    margin: 20px;
+body > div > form > h2 {
+    font-size: 30px;
+    margin-bottom: 1vh;
 }
