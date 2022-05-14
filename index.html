@@ -17,16 +17,16 @@
   <h1 id="logoText">ALIENZ</h1>
   </div>
 
-  <div>
+  <div id="rightSideContainer">
     <div id="greetingText">
       <p>Greetings, residents of the galaxy. <br>
-        Join our <em>real</em> online service, and chat 
-      with <em>real</em> aliens just like <em>you!</em> <br>
+        Join our (not) <em>real</em> online service, and chat 
+      with (not) <em>real</em> aliens just like <em>you!</em> <br>
       Earth residents are not permitted.</p>
       <p>Sign up today!</p>
     </div>
 
-    <form id="signUpSheet">
+    <form action="#" method="get" id="signUpSheet">
       <h2>To infinity... and beyond!</h2> <br>
       <div id="formContainer">
         <div>
@@ -43,7 +43,8 @@
         </div>
         <div>
           <label for="phone">PHONE NUMBER</label>
-          <input required type="tel" id="phone" name="phone"><br>
+          <input required type="tel" id="phone" name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Ex: 123-456-7890"><br>
         </div>
         <div>
           <label for="password">PASSWORD</label>
@@ -51,12 +52,12 @@
         </div>
         <div>
           <label for="passConfirm">CONFIRM PASSWORD</label>
-          <input required type="password" id="passConfirm" name="passConfirm">
+          <input required type="password" id="passConfirm" name="passConfirm" minlength="8">
         </div>
       </div>
     </form>
 
-    <button id="createAccount" type="submit">Create Account</button>
+    <button id="createAccount" type="submit" form="signUpSheet">Create Account</button>
     <div id="logIn">Already have an account? <a>Log in</a></div>
 
   </div>
