@@ -55,7 +55,7 @@ table {
 }
 
 body {
-    background-color: #8b3349;
+    background-color: #6d404c;
     color: rgb(199, 206, 212);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -112,30 +112,83 @@ body > div + div > div > p + p {
 }
 
 #signUpSheet {
-    background-color: #4c1b27;
+    background-color: #aa7482;
     padding: 4vh;
     padding-top: 2vh;
-    border-top: maroon;
-    border-bottom: maroon;
+    border-top: rgb(173, 71, 71);
+    border-bottom: rgb(173, 71, 71);
     border-width: 2px;
     border-left: 0px;
     border-right: 0px;
     border-style: solid;
+    width: 52vw;
 }
 
 #formContainer {
-    display: flex;
-    width: 50vw;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas:
+    "fname lname"
+    "email phone"
+    "pass confirm";
+    width: 30vw;
 }
 
 #formContainer > div {
     display: flex;
     flex-direction: column;
+    width: fit-content;
 }
 
-body > div > form > h2 {
-    font-size: 30px;
+#formContainer > div:nth-child(1){
+    grid-area: fname;
+}
+
+#formContainer > div:nth-child(2){
+    grid-area: lname;
+}
+
+#formContainer > div:nth-child(3){
+    grid-area: email;
+}
+
+#formContainer > div:nth-child(4){
+    grid-area: phone;
+}
+
+#formContainer > div:nth-child(5){
+    grid-area: pass;
+}
+
+#formContainer > div:nth-child(6){
+    grid-area: confirm;
+}
+
+#formContainer > div:nth-child(odd){
+    margin-right: 4vw;
+}
+
+input {
+    margin-top: 0.5vh;
+    padding: 1.5%;
+    border-color: #4c1b27;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    height: 2vh;
+    width: 16vw;
+}
+
+input:focus {
+    outline-color: rgb(142, 114, 243);
+}
+
+label {
+    color: rgb(253, 253, 253);
+    font-size: 12px;
+}
+
+h2 {
+    font-size: clamp(12px, 6vw, 22px);
     margin-bottom: 1vh;
 }
 
@@ -152,6 +205,7 @@ body > div > form > h2 {
     font-size: clamp(1vw, 16px, 2vw);
     font-weight: bold;
     border-radius: 1em;
+    cursor: pointer;
 }
 
 #createAccount:hover {
@@ -165,5 +219,10 @@ body > div > form > h2 {
 
 a {
     color: rgb(142, 114, 243);
-    font-weight: bold;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+a:hover {
+    color: whitesmoke;
 }
