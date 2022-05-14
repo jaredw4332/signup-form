@@ -97,6 +97,12 @@ em {
     font-weight: 600;
 }
 
+#rightSideContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 #greetingText {
     padding: 2vh;
     padding-left: 4vh;
@@ -121,7 +127,6 @@ body > div + div > div > p + p {
     border-left: 0px;
     border-right: 0px;
     border-style: solid;
-    width: 52vw;
 }
 
 #formContainer {
