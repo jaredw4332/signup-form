@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/alien.svg"/>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -27,22 +28,36 @@
 
     <form id="signUpSheet">
       <h2>To infinity... and beyond!</h2> <br>
-      <label for="fname">FIRST NAME</label>
-      <input required type="text" id="fname" name="fname">
-      <label for="lname">LAST NAME</label>
-      <input required type="text" id="lname" name="lname"><br>
-      <label for="email">EMAIL</label>
-      <input required type="email" id="email" name="email">
-      <label for="phone">PHONE NUMBER</label>
-      <input required type="tel" id="phone" name="phone"><br>
-      <label for="password">PASSWORD</label>
-      <input required type="password" id="password" name="password" minlength="8">
-      <label for="passConfirm">CONFIRM PASSWORD</label>
-      <input required type="password" id="passConfirm" name="passConfirm">
+      <div id="formContainer">
+        <div>
+          <label for="fname">FIRST NAME</label>
+          <input required type="text" id="fname" name="fname">
+        </div>
+        <div>
+          <label for="lname">LAST NAME</label>
+          <input required type="text" id="lname" name="lname"><br>
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input required type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="phone">PHONE NUMBER</label>
+          <input required type="tel" id="phone" name="phone"><br>
+        </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input required type="password" id="password" name="password" minlength="8">
+        </div>
+        <div>
+          <label for="passConfirm">CONFIRM PASSWORD</label>
+          <input required type="password" id="passConfirm" name="passConfirm">
+        </div>
+      </div>
     </form>
 
-    <button type="button">Create Account</button>
-    <div>Already have an account? <a>Log in</a></div>
+    <button id="createAccount" type="submit">Create Account</button>
+    <div id="logIn">Already have an account? <a>Log in</a></div>
 
   </div>
 
