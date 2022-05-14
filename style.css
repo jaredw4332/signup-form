@@ -97,37 +97,73 @@ em {
     font-weight: 600;
 }
 
-body > div + div {
-    display: flex;
-    flex-direction: column;
-}
-
 #greetingText {
     padding: 2vh;
-    padding-left: 2.5vh;
-    font-size: clamp(16px, 6vw, 22px);
+    padding-left: 4vh;
+    font-size: clamp(12px, 6vw, 22px);
     margin-top: 12vh;
-    margin-bottom: 6vh;
-    line-height: 3.5vh;
+    margin-bottom: 4vh;
+    line-height: clamp(21px, 3.5vh, 35px);
     max-width: 40vw;
 }
 
 body > div + div > div > p + p {
-    margin-top: 6vh;
-}
-
-input, label {
-    display: block;
-    width: 15vw;
-    margin-bottom: 0.5%;
+    margin-top: 3vh;
 }
 
 #signUpSheet {
     background-color: #4c1b27;
-    padding: 5%;
+    padding: 4vh;
+    padding-top: 2vh;
+    border-top: maroon;
+    border-bottom: maroon;
+    border-width: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+}
+
+#formContainer {
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+#formContainer > div {
+    display: flex;
+    flex-direction: column;
 }
 
 body > div > form > h2 {
     font-size: 30px;
     margin-bottom: 1vh;
+}
+
+#createAccount {
+    min-width: fit-content;
+    min-height: fit-content;
+    width: 12vw;
+    height: 6vh;
+    margin: 4vh;
+    background-color: rgb(103, 93, 139);
+    color: rgb(199, 206, 212);
+    border-color: rgb(103, 93, 139);
+    border-width: 3px;
+    font-size: clamp(1vw, 16px, 2vw);
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+#createAccount:hover {
+    background-color: rgb(199, 206, 212);
+    color: rgb(103, 93, 139);
+}
+
+#logIn {
+    margin-left: 4vh;
+}
+
+a {
+    color: rgb(142, 114, 243);
+    font-weight: bold;
 }
