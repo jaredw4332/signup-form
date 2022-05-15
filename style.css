@@ -131,10 +131,7 @@ body > div + div > div > p + p {
 
 #formContainer {
     display: grid;
-    grid-template-areas:
-    "fname lname"
-    "email phone"
-    "pass confirm";
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
     width: 30vw;
 }
 
@@ -142,30 +139,6 @@ body > div + div > div > p + p {
     display: flex;
     flex-direction: column;
     width: fit-content;
-}
-
-#formContainer > div:nth-child(1){
-    grid-area: fname;
-}
-
-#formContainer > div:nth-child(2){
-    grid-area: lname;
-}
-
-#formContainer > div:nth-child(3){
-    grid-area: email;
-}
-
-#formContainer > div:nth-child(4){
-    grid-area: phone;
-}
-
-#formContainer > div:nth-child(5){
-    grid-area: pass;
-}
-
-#formContainer > div:nth-child(6){
-    grid-area: confirm;
 }
 
 #formContainer > div:nth-child(odd){
@@ -179,7 +152,7 @@ input {
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    height: 2vh;
+    min-height: 2vh;
     width: 16vw;
 }
 
